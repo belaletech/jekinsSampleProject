@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Running Maven build and specifying TestNG suite file
-                sh 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/java/chrome.xml'
+                bat 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/java/chrome.xml'
             }
         }
     }
