@@ -32,6 +32,8 @@ public class Main {
         ltOptions.put("project", "Belal");
         ltOptions.put("w3c", true); // Ensure W3C compliance
         ltOptions.put("debug", true); // Enable debugging if needed
+        ltOptions.put("tunnel",true);
+        ltOptions.put("tunnelName","belalTunnel");
         browserOptions.setCapability("LT:Options", ltOptions);
         // Construct the URL
         String remoteUrl = "https://" + username + ":" + authkey + "@" + hub;
